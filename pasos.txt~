@@ -1,0 +1,42 @@
+Arduino:
+----------
+1) Descargar el IDE de Arduino desde: 
+https://www.arduino.cc/en/Main/Software
+
+2) Instalar el plugin de NODEMCU, copiando el siguiente enlace:
+http://arduino.esp8266.com/stable/package_esp8266com_index.json
+
+en preferencias que se encuentra en el menu "File" del IDe de Arduino,
+pegar en la opción que dice:  
+"Additional Boards Manager URLS"
+
+3) en TOOLS/BOARD/MANAGER BOARDS, podremos instalar los paquetes para la NODEMCU, ingresando "NODEMCU" o "ESP8266" e instalar.
+
+4) Descargar la libreria de MQTT llamada PUBSUBCLIENT, esto lo hacemos ingresando en el menu "SKETCH/INCLUDE LIBRARY/MANAGE LIBRARY"
+buscar "PubSubClient" e instalar la ultima versión.
+
+
+Python:
+---------
+
+1) Descargar python de : https://www.python.org/downloads/ 
+se recomienda descargar la version 2.7.x  en formato ".exe", dar siguiente siguiente e instalar.
+
+2) Luego de instalada, en el Disco "C" de tu computadora se encuentra la carpeta C:\\Python, copiar esto a los PATH como se explico en clase.
+click derecho en "Mi PC" luego en opciones avanzadas y variables de entorno.
+buscar la opcion de PATH y agregar.
+
+3) en la carpeta donde esta instalada python se encuentra dentro una carpeta llamada "SCRIPTS" ahi se encuentra "PIP" que es el gestor de paquetes de python en windows, abrir desde ese ruta un CMD y dentro del CMD tipear:
+pip install paho-mqtt
+
+3) listo con todos estos pasos ya podran comunicar python con la nodemcu por internet, provecho :) 
+
+
+Saludos.
+Moises stevend MEza Rodriguez.
+Taller UPC
+
+PD: Dejo el enlace de los BROKER publicos para que puedas probar:
+https://github.com/mqtt/mqtt.github.io/wiki/public_brokers
+
+
